@@ -1,0 +1,26 @@
+package org.example.model;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+public class Order {
+    private String id;
+    private CustomerType customerType;
+    private PaymentType paymentType;
+    private List<String> items;
+    private BigDecimal amount;
+
+    public Order(String id, CustomerType customerType, PaymentType paymentType, List<String> items, BigDecimal amount) {
+        this.id = id;
+        this.customerType = customerType;
+        this.paymentType = paymentType;
+        this.items = items;
+        this.amount = amount;
+    }
+
+    public String getId() { return id; }
+    public CustomerType getCustomerType() { return customerType; }
+    public PaymentType getPaymentType() { return paymentType; }
+    public List<String> getItems() { return items; }
+    public BigDecimal getAmount() { return amount; }
+}
